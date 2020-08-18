@@ -1,0 +1,6 @@
+<div class="field">
+    <label class="label" for="{{ include.name }}_textarea">{{ include.label }}{% if include.required %} <abbr title="required">*</abbr>{% endif %}</label>
+    <div class="control">
+        <textarea class="textarea" id="{{ include.name }}_textarea" name="{{ include.name }}"{% if include.required %} required{% endif %}></textarea>
+    </div>
+</div>

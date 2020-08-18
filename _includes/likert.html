@@ -1,0 +1,25 @@
+<fieldset class="field is-grouped">
+    <legend class="label">{{ include.legend }}{% if include.required %} <abbr title="required">*</abbr>{% endif %}</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_cd" value="1"{% if include.required %} required{% endif %}>
+            <label type="radio" class="radio" for="{{ include.name }}_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_sd" value="2"{% if include.required %} required{% endif %}>
+            <label type="radio" class="radio" for="{{ include.name }}_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_i" value="3"{% if include.required %} required{% endif %}>
+            <label type="radio" class="radio" for="{{ include.name }}_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_sa" value="4"{% if include.required %} required{% endif %}>
+            <label type="radio" class="radio" for="{{ include.name }}_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_ca" value="5"{% if include.required %} required{% endif %}>
+            <label type="radio" class="radio" for="{{ include.name }}_ca">Always</label>
+        </p>
+    </div>
+</fieldset>

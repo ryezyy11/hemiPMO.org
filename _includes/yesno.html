@@ -1,0 +1,13 @@
+<fieldset class="field">
+    <legend class="label">{{ include.legend }}{% if include.required %} <abbr title="required">*</abbr>{% endif %}</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_yes" value="Y"{% if include.required %} required{% endif %}>
+            <label class="radio" for="{{ include.name }}_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="{{ include.name }}" id="{{ include.name }}_no" value="N"{% if include.required %} required{% endif %}>
+            <label class="radio" for="{{ include.name }}_no">No</label>
+        </p>
+    </div>
+</fieldset>

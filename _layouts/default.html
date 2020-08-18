@@ -1,0 +1,14 @@
+---
+layout: basic
+---
+<section class="section">
+  <div class="container">
+      {% if page.heading %}
+        <h1 class="title is-2">{{ page.heading }}</h1>
+      {% endif %}
+      {% if page.subheading %}
+        <p class="subtitle is-4">{{ page.subheading }}</p>
+      {% endif %}
+      {{ content }}
+  </div>
+</section>

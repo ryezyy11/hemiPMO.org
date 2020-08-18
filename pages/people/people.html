@@ -1,0 +1,113 @@
+---
+layout: default
+title: About the Researchers - Faceblind
+heading: People
+description: A list of the researchers associated with faceblind.org.
+order: 1
+permalink: /people/
+---
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <p class="title is-3">Dartmouth College</p>
+        <p class="subtitle is-4"><a href="https://lab.faceblind.org">Social Perception Lab</a></p>
+    </div>
+</div>
+<div class="columns">
+    <div class="column is-10 is-offset-1">
+        <div class="columns">
+            <div class="column is-10 is-offset-1">
+
+{% assign vip = site.dartmouth | where_exp: "member", "member.topoflist == true" | sort_natural: 'lastname' %}
+{% assign others = site.dartmouth | where_exp: "member", "member.topoflist != true" | sort_natural: 'lastname' %}
+{% assign lab_members = vip | concat: others %}
+
+{% for member in lab_members %}
+<div class="card" id="{{ member.lastname }}">
+    <div class="card-content">
+        <div class="columns">
+            <div class="column is-narrow">
+                <figure class="image is-128x128">
+                    {% capture profile_pic %}/assets/images/people/{{ member.image }}{% endcapture %}
+                    <img class="is-rounded" src="{{ profile_pic | relative_url }}">
+                </figure>
+            </div>
+            <div class="column">
+                <p class="title is-4">
+                    {{ member.firstname }} {{ member.lastname }}
+                </p>
+                <p class="subtitle is-6 is-italic">
+                    {% for position in member.positions %}{{ position }}<br>{% endfor %}
+                </p>
+                <p class="content">
+                    {{ member.content | markdownify }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer">
+        {% if member.email %}<a href="mailto:{{ member.email }}" class="card-footer-item">Email</a>{% endif %}
+        {% if member.website %}<a href="{{ member.website }}" class="card-footer-item">Website</a>{% endif %}
+    </footer>
+</div>
+<br>
+{% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="columns">
+        <div class="column is-8 is-offset-2">
+            <p class="title is-3">Collaborators</p>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-10 is-offset-1">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+    
+    {% assign vip = site.collaborators | where_exp: "member", "member.topoflist == true" | sort_natural: 'lastname' %}
+    {% assign others = site.collaborators | where_exp: "member", "member.topoflist != true" | sort_natural: 'lastname' %}
+    {% assign lab_members = vip | concat: others %}
+    
+    {% for member in lab_members %}
+    <div class="card" id="{{ member.lastname }}">
+        <div class="card-content">
+            <div class="columns">
+                <div class="column is-narrow">
+                    <figure class="image is-128x128">
+                        {% capture profile_pic %}/assets/images/people/{{ member.image }}{% endcapture %}
+                        <img class="is-rounded" src="{{ profile_pic | relative_url }}">
+                    </figure>
+                </div>
+                <div class="column">
+                    <p class="title is-4">
+                        {{ member.firstname }} {{ member.lastname }}
+                    </p>
+                    <p class="subtitle is-6 is-italic">
+                        {% for position in member.positions %}{{ position }}<br>{% endfor %}
+                    </p>
+                    <p class="content">
+                        {{ member.content | markdownify }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="card-footer">
+            {% if member.email %}<a href="mailto:{{ member.email }}" class="card-footer-item">Email</a>{% endif %}
+            {% if member.website %}<a href="{{ member.website }}" class="card-footer-item">Website</a>{% endif %}
+        </footer>
+    </div>
+    <br>
+    {% endfor %}
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>

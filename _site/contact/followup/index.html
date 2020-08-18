@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="EqjmOBKDxW3REPfmW0aQPmA-LPsQSG8a3bcOHoPUWu0" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+
+    <title>Follow-up Survey - Faceblind</title>
+
+</head>
+
+
+  
+    <body class="has-navbar-fixed-top">
+  
+
+    <header>
+    
+        <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+    
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <!--<img src="/assets/images/faceblind_logo_small_transparent.png" alt="faceblind logo">-->
+                    <strong>&nbsp;&nbsp;HEMIPMO.ORG</strong>
+                </a>
+                <div role="button" class="navbar-burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/research/">Research</a>
+                    <a class="navbar-item" href="/contact/">Contact Us</a>
+                    <a class="navbar-item" href=" /people/">People</a>
+                </div>
+                <div class="navbar-end">
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <section class="section">
+  <div class="container">
+      
+        <h1 class="title is-2">Follow-up Survey</h1>
+      
+      
+      <div class="columns">
+  <article class="column is-8 is-offset-2">
+    <p class="content">
+    <strong><abbr title="required">*</abbr> indicates a required field.</strong>
+</p>
+<p class="content">
+    Please make sure to use the same name and email address that you used on the first form. If you have not completed the first contact form, please do so <a href="/contact/">here</a> first.
+</p>
+<form name="followup" action="/contact/followup/success" method="POST" netlify-honeypot="extra" netlify>
+    <section>
+        <div class="field">
+            <label class="label" for="first_name">First Name <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="first_name" name="first_name" type="text" autocomplete="given-name" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="last_name">Last Name <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="last_name" name="last_name" type="text" autocomplete="family-name" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="email">Email Address <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Conditions</h4>
+        </div>
+
+        <p class="content">
+            Please indicate if any of the following applies to you.
+        </p>
+
+        <fieldset class="field">
+    <legend class="label">Severe head trauma (predating your face processing difficulties)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="trauma" id="trauma_yes" value="Y">
+            <label class="radio" for="trauma_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="trauma" id="trauma_no" value="N">
+            <label class="radio" for="trauma_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Stroke (predating your face recognition difficulties)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="stroke" id="stroke_yes" value="Y">
+            <label class="radio" for="stroke_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="stroke" id="stroke_no" value="N">
+            <label class="radio" for="stroke_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Carbon Monoxide Poisoning or Anoxia (predating your face recognition difficulties)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="co_poison" id="co_poison_yes" value="Y">
+            <label class="radio" for="co_poison_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="co_poison" id="co_poison_no" value="N">
+            <label class="radio" for="co_poison_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Strabismus (Crossed eyes, wall eyes, wandering eyes)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="strabismus" id="strabismus_yes" value="Y">
+            <label class="radio" for="strabismus_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="strabismus" id="strabismus_no" value="N">
+            <label class="radio" for="strabismus_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Amblyopia (Lazy Eye)</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_none" value="none">
+                    <label class="radio" for="amblyopia_none">None</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_left" value="left">
+                    <label class="radio" for="amblyopia_left">Left Eye</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_right" value="right">
+                    <label class="radio" for="amblyopia_right">Right Eye</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_unsure" value="unsure">
+                    <label class="radio" for="amblyopia_unsure">Unsure Which Eye</label>
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Cataracts</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_none" value="none">
+                    <label class="radio" for="cataracts_none">None</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_rb" value="right_birth">
+                    <label class="radio" for="cataracts_rb">Right Eye - At Birth</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_rc" value="right_child">
+                    <label class="radio" for="cataracts_rc">Right Eye - In Childhood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_ra" value="right_adult">
+                    <label class="radio" for="cataracts_ra">Right Eye - In Adolescence or Adulthood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_lb" value="left_birth">
+                    <label class="radio" for="cataracts_lb">Left Eye - At Birth</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_lc" value="left_child">
+                    <label class="radio" for="cataracts_lc">Left Eye - In Childhood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_la" value="left_adult">
+                    <label class="radio" for="cataracts_la">Left Eye - In Adolescence or Adulthood</label>
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset class="field">
+    <legend class="label">Severe myopia which went uncorrected for years</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="myopia" id="myopia_yes" value="Y">
+            <label class="radio" for="myopia_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="myopia" id="myopia_no" value="N">
+            <label class="radio" for="myopia_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">ADHD</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="ADHD" id="ADHD_yes" value="Y">
+            <label class="radio" for="ADHD_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="ADHD" id="ADHD_no" value="N">
+            <label class="radio" for="ADHD_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+        
+        <fieldset class="field">
+    <legend class="label">Color Blindness / Color Deficiency</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="colorblind" id="colorblind_yes" value="Y">
+            <label class="radio" for="colorblind_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="colorblind" id="colorblind_no" value="N">
+            <label class="radio" for="colorblind_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Aphasia (Speech production or speech perception deficit)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="aphasia" id="aphasia_yes" value="Y">
+            <label class="radio" for="aphasia_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="aphasia" id="aphasia_no" value="N">
+            <label class="radio" for="aphasia_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Depression</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="depression" id="depression_yes" value="Y">
+            <label class="radio" for="depression_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="depression" id="depression_no" value="N">
+            <label class="radio" for="depression_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Dyslexia (Reading deficit)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="dyslexia" id="dyslexia_yes" value="Y">
+            <label class="radio" for="dyslexia_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="dyslexia" id="dyslexia_no" value="N">
+            <label class="radio" for="dyslexia_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Autism</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="autism" id="autism_yes" value="Y">
+            <label class="radio" for="autism_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="autism" id="autism_no" value="N">
+            <label class="radio" for="autism_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Asperger Syndrome</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="asperger" id="asperger_yes" value="Y">
+            <label class="radio" for="asperger_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="asperger" id="asperger_no" value="N">
+            <label class="radio" for="asperger_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Synaesthesia</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="synaesthesia" id="synaesthesia_yes" value="Y">
+            <label class="radio" for="synaesthesia_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="synaesthesia" id="synaesthesia_no" value="N">
+            <label class="radio" for="synaesthesia_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Speech Comprehension Problems (For example, central auditory processing deficit)</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="speech_comp" id="speech_comp_yes" value="Y">
+            <label class="radio" for="speech_comp_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="speech_comp" id="speech_comp_no" value="N">
+            <label class="radio" for="speech_comp_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Severe Navigational Problems</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="navigation" id="navigation_yes" value="Y">
+            <label class="radio" for="navigation_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="navigation" id="navigation_no" value="N">
+            <label class="radio" for="navigation_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Left-Right Confusion</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="leftright" id="leftright_yes" value="Y">
+            <label class="radio" for="leftright_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="leftright" id="leftright_no" value="N">
+            <label class="radio" for="leftright_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Learning Disabilities</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="learning" id="learning_yes" value="Y">
+            <label class="radio" for="learning_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="learning" id="learning_no" value="N">
+            <label class="radio" for="learning_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Motor Coordination Impairments</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="motor" id="motor_yes" value="Y">
+            <label class="radio" for="motor_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="motor" id="motor_no" value="N">
+            <label class="radio" for="motor_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Handedness</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_left" value="left">
+                    <label type="radio" class="radio" for="handedness_left">Left</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_right" value="right">
+                    <label type="radio" class="radio" for="handedness_right">Right</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_both" value="ambidextrous">
+                    <label type="radio" class="radio" for="handedness_both">Ambidextrous</label>
+                </p>
+            </div>
+        </fieldset>
+
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Research Participation</h4>
+        </div>
+
+        <fieldset class="field">
+    <legend class="label">Would you be willing to have your recognition abilities assessed over the internet?</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="internet" id="internet_yes" value="Y">
+            <label class="radio" for="internet_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="internet" id="internet_no" value="N">
+            <label class="radio" for="internet_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Would you be willing to have your recognition abilities assessed in your hometown?</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="hometown" id="hometown_yes" value="Y">
+            <label class="radio" for="hometown_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="hometown" id="hometown_no" value="N">
+            <label class="radio" for="hometown_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Would you be willing to travel to one of our labs to be tested (travel expenses paid)?</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="travel" id="travel_yes" value="Y">
+            <label class="radio" for="travel_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="travel" id="travel_no" value="N">
+            <label class="radio" for="travel_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field">
+    <legend class="label">Would you be willing to participate in experiments to see if some aspects of face perception and recognition can be trained?</legend>
+    <div class="field is-grouped">
+        <p class="control">
+            <input type="radio" class="radio" name="training" id="training_yes" value="Y">
+            <label class="radio" for="training_yes">Yes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="training" id="training_no" value="N">
+            <label class="radio" for="training_no">No</label>
+        </p>
+    </div>
+</fieldset>
+
+
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Perception and Cognition in Daily Life</h4>
+        </div>
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can remember a seven digit telephone number long enough to write it down.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="digits" id="digits_cd" value="1">
+            <label type="radio" class="radio" for="digits_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="digits" id="digits_sd" value="2">
+            <label type="radio" class="radio" for="digits_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="digits" id="digits_i" value="3">
+            <label type="radio" class="radio" for="digits_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="digits" id="digits_sa" value="4">
+            <label type="radio" class="radio" for="digits_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="digits" id="digits_ca" value="5">
+            <label type="radio" class="radio" for="digits_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize a close family member or good friend in a photograph.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="photograph" id="photograph_cd" value="1">
+            <label type="radio" class="radio" for="photograph_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="photograph" id="photograph_sd" value="2">
+            <label type="radio" class="radio" for="photograph_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="photograph" id="photograph_i" value="3">
+            <label type="radio" class="radio" for="photograph_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="photograph" id="photograph_sa" value="4">
+            <label type="radio" class="radio" for="photograph_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="photograph" id="photograph_ca" value="5">
+            <label type="radio" class="radio" for="photograph_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize my own baggage at the airport.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="baggage" id="baggage_cd" value="1">
+            <label type="radio" class="radio" for="baggage_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="baggage" id="baggage_sd" value="2">
+            <label type="radio" class="radio" for="baggage_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="baggage" id="baggage_i" value="3">
+            <label type="radio" class="radio" for="baggage_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="baggage" id="baggage_sa" value="4">
+            <label type="radio" class="radio" for="baggage_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="baggage" id="baggage_ca" value="5">
+            <label type="radio" class="radio" for="baggage_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+        
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble finding items in cluttered scenes.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="cluttered" id="cluttered_cd" value="1">
+            <label type="radio" class="radio" for="cluttered_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="cluttered" id="cluttered_sd" value="2">
+            <label type="radio" class="radio" for="cluttered_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="cluttered" id="cluttered_i" value="3">
+            <label type="radio" class="radio" for="cluttered_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="cluttered" id="cluttered_sa" value="4">
+            <label type="radio" class="radio" for="cluttered_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="cluttered" id="cluttered_ca" value="5">
+            <label type="radio" class="radio" for="cluttered_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble recognizing voices.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="voices" id="voices_cd" value="1">
+            <label type="radio" class="radio" for="voices_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="voices" id="voices_sd" value="2">
+            <label type="radio" class="radio" for="voices_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="voices" id="voices_i" value="3">
+            <label type="radio" class="radio" for="voices_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="voices" id="voices_sa" value="4">
+            <label type="radio" class="radio" for="voices_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="voices" id="voices_ca" value="5">
+            <label type="radio" class="radio" for="voices_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I treat strangers as if I know them to avoid offending people I might already know.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="strangers" id="strangers_cd" value="1">
+            <label type="radio" class="radio" for="strangers_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="strangers" id="strangers_sd" value="2">
+            <label type="radio" class="radio" for="strangers_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="strangers" id="strangers_i" value="3">
+            <label type="radio" class="radio" for="strangers_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="strangers" id="strangers_sa" value="4">
+            <label type="radio" class="radio" for="strangers_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="strangers" id="strangers_ca" value="5">
+            <label type="radio" class="radio" for="strangers_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I find it easy to play games with children that involve pretending.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="pretend" id="pretend_cd" value="1">
+            <label type="radio" class="radio" for="pretend_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="pretend" id="pretend_sd" value="2">
+            <label type="radio" class="radio" for="pretend_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="pretend" id="pretend_i" value="3">
+            <label type="radio" class="radio" for="pretend_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="pretend" id="pretend_sa" value="4">
+            <label type="radio" class="radio" for="pretend_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="pretend" id="pretend_ca" value="5">
+            <label type="radio" class="radio" for="pretend_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I find it hard to keep track of characters in TV shows or movies.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="characters" id="characters_cd" value="1">
+            <label type="radio" class="radio" for="characters_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="characters" id="characters_sd" value="2">
+            <label type="radio" class="radio" for="characters_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="characters" id="characters_i" value="3">
+            <label type="radio" class="radio" for="characters_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="characters" id="characters_sa" value="4">
+            <label type="radio" class="radio" for="characters_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="characters" id="characters_ca" value="5">
+            <label type="radio" class="radio" for="characters_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">When trying to find an acquaintance, I have trouble if they are in a room full of people.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="full_room" id="full_room_cd" value="1">
+            <label type="radio" class="radio" for="full_room_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="full_room" id="full_room_sd" value="2">
+            <label type="radio" class="radio" for="full_room_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="full_room" id="full_room_i" value="3">
+            <label type="radio" class="radio" for="full_room_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="full_room" id="full_room_sa" value="4">
+            <label type="radio" class="radio" for="full_room_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="full_room" id="full_room_ca" value="5">
+            <label type="radio" class="radio" for="full_room_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I find it hard to recognize someone I just met.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="just_met" id="just_met_cd" value="1">
+            <label type="radio" class="radio" for="just_met_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="just_met" id="just_met_sd" value="2">
+            <label type="radio" class="radio" for="just_met_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="just_met" id="just_met_i" value="3">
+            <label type="radio" class="radio" for="just_met_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="just_met" id="just_met_sa" value="4">
+            <label type="radio" class="radio" for="just_met_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="just_met" id="just_met_ca" value="5">
+            <label type="radio" class="radio" for="just_met_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I notice whether faces are attractive or unattractive.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="attractive" id="attractive_cd" value="1">
+            <label type="radio" class="radio" for="attractive_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="attractive" id="attractive_sd" value="2">
+            <label type="radio" class="radio" for="attractive_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="attractive" id="attractive_i" value="3">
+            <label type="radio" class="radio" for="attractive_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="attractive" id="attractive_sa" value="4">
+            <label type="radio" class="radio" for="attractive_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="attractive" id="attractive_ca" value="5">
+            <label type="radio" class="radio" for="attractive_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble recognizing houses I have visited.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="houses" id="houses_cd" value="1">
+            <label type="radio" class="radio" for="houses_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="houses" id="houses_sd" value="2">
+            <label type="radio" class="radio" for="houses_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="houses" id="houses_i" value="3">
+            <label type="radio" class="radio" for="houses_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="houses" id="houses_sa" value="4">
+            <label type="radio" class="radio" for="houses_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="houses" id="houses_ca" value="5">
+            <label type="radio" class="radio" for="houses_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble recognizing people when they are in uniform.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="uniform" id="uniform_cd" value="1">
+            <label type="radio" class="radio" for="uniform_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="uniform" id="uniform_sd" value="2">
+            <label type="radio" class="radio" for="uniform_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="uniform" id="uniform_i" value="3">
+            <label type="radio" class="radio" for="uniform_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="uniform" id="uniform_sa" value="4">
+            <label type="radio" class="radio" for="uniform_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="uniform" id="uniform_ca" value="5">
+            <label type="radio" class="radio" for="uniform_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize well known actors/actresses when watching a movie.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="actors" id="actors_cd" value="1">
+            <label type="radio" class="radio" for="actors_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="actors" id="actors_sd" value="2">
+            <label type="radio" class="radio" for="actors_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="actors" id="actors_i" value="3">
+            <label type="radio" class="radio" for="actors_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="actors" id="actors_sa" value="4">
+            <label type="radio" class="radio" for="actors_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="actors" id="actors_ca" value="5">
+            <label type="radio" class="radio" for="actors_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have found out that two acquaintances I knew were actually the same person.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="same_person" id="same_person_cd" value="1">
+            <label type="radio" class="radio" for="same_person_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="same_person" id="same_person_sd" value="2">
+            <label type="radio" class="radio" for="same_person_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="same_person" id="same_person_i" value="3">
+            <label type="radio" class="radio" for="same_person_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="same_person" id="same_person_sa" value="4">
+            <label type="radio" class="radio" for="same_person_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="same_person" id="same_person_ca" value="5">
+            <label type="radio" class="radio" for="same_person_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I find it easy to &quot;read between the lines&quot; when someone is talking to me.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="between_lines" id="between_lines_cd" value="1">
+            <label type="radio" class="radio" for="between_lines_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="between_lines" id="between_lines_sd" value="2">
+            <label type="radio" class="radio" for="between_lines_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="between_lines" id="between_lines_i" value="3">
+            <label type="radio" class="radio" for="between_lines_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="between_lines" id="between_lines_sa" value="4">
+            <label type="radio" class="radio" for="between_lines_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="between_lines" id="between_lines_ca" value="5">
+            <label type="radio" class="radio" for="between_lines_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I notice similarities in the faces of people from the same family.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="similarities" id="similarities_cd" value="1">
+            <label type="radio" class="radio" for="similarities_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="similarities" id="similarities_sd" value="2">
+            <label type="radio" class="radio" for="similarities_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="similarities" id="similarities_i" value="3">
+            <label type="radio" class="radio" for="similarities_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="similarities" id="similarities_sa" value="4">
+            <label type="radio" class="radio" for="similarities_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="similarities" id="similarities_ca" value="5">
+            <label type="radio" class="radio" for="similarities_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can remember my own telephone number.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="my_number" id="my_number_cd" value="1">
+            <label type="radio" class="radio" for="my_number_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="my_number" id="my_number_sd" value="2">
+            <label type="radio" class="radio" for="my_number_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="my_number" id="my_number_i" value="3">
+            <label type="radio" class="radio" for="my_number_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="my_number" id="my_number_sa" value="4">
+            <label type="radio" class="radio" for="my_number_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="my_number" id="my_number_ca" value="5">
+            <label type="radio" class="radio" for="my_number_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I find streets I have often traveled unfamiliar.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="unfamiliar" id="unfamiliar_cd" value="1">
+            <label type="radio" class="radio" for="unfamiliar_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="unfamiliar" id="unfamiliar_sd" value="2">
+            <label type="radio" class="radio" for="unfamiliar_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="unfamiliar" id="unfamiliar_i" value="3">
+            <label type="radio" class="radio" for="unfamiliar_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="unfamiliar" id="unfamiliar_sa" value="4">
+            <label type="radio" class="radio" for="unfamiliar_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="unfamiliar" id="unfamiliar_ca" value="5">
+            <label type="radio" class="radio" for="unfamiliar_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can visualize the faces of family members and close friends.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="visualize" id="visualize_cd" value="1">
+            <label type="radio" class="radio" for="visualize_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="visualize" id="visualize_sd" value="2">
+            <label type="radio" class="radio" for="visualize_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="visualize" id="visualize_i" value="3">
+            <label type="radio" class="radio" for="visualize_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="visualize" id="visualize_sa" value="4">
+            <label type="radio" class="radio" for="visualize_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="visualize" id="visualize_ca" value="5">
+            <label type="radio" class="radio" for="visualize_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble perceiving emotions from faces.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="perceive" id="perceive_cd" value="1">
+            <label type="radio" class="radio" for="perceive_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="perceive" id="perceive_sd" value="2">
+            <label type="radio" class="radio" for="perceive_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="perceive" id="perceive_i" value="3">
+            <label type="radio" class="radio" for="perceive_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="perceive" id="perceive_sa" value="4">
+            <label type="radio" class="radio" for="perceive_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="perceive" id="perceive_ca" value="5">
+            <label type="radio" class="radio" for="perceive_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize famous celebrities in photos or on TV.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="famous" id="famous_cd" value="1">
+            <label type="radio" class="radio" for="famous_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="famous" id="famous_sd" value="2">
+            <label type="radio" class="radio" for="famous_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="famous" id="famous_i" value="3">
+            <label type="radio" class="radio" for="famous_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="famous" id="famous_sa" value="4">
+            <label type="radio" class="radio" for="famous_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="famous" id="famous_ca" value="5">
+            <label type="radio" class="radio" for="famous_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I like to collect information about categories of things (e.g. types of cars, birds, trains, plants, etc.).</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="collect" id="collect_cd" value="1">
+            <label type="radio" class="radio" for="collect_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="collect" id="collect_sd" value="2">
+            <label type="radio" class="radio" for="collect_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="collect" id="collect_i" value="3">
+            <label type="radio" class="radio" for="collect_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="collect" id="collect_sa" value="4">
+            <label type="radio" class="radio" for="collect_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="collect" id="collect_ca" value="5">
+            <label type="radio" class="radio" for="collect_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble determining how old someone is from their face.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="age" id="age_cd" value="1">
+            <label type="radio" class="radio" for="age_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="age" id="age_sd" value="2">
+            <label type="radio" class="radio" for="age_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="age" id="age_i" value="3">
+            <label type="radio" class="radio" for="age_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="age" id="age_sa" value="4">
+            <label type="radio" class="radio" for="age_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="age" id="age_ca" value="5">
+            <label type="radio" class="radio" for="age_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize particular cats and dogs.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="animals" id="animals_cd" value="1">
+            <label type="radio" class="radio" for="animals_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="animals" id="animals_sd" value="2">
+            <label type="radio" class="radio" for="animals_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="animals" id="animals_i" value="3">
+            <label type="radio" class="radio" for="animals_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="animals" id="animals_sa" value="4">
+            <label type="radio" class="radio" for="animals_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="animals" id="animals_ca" value="5">
+            <label type="radio" class="radio" for="animals_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have thought that one person was actually two different people.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="onetwo" id="onetwo_cd" value="1">
+            <label type="radio" class="radio" for="onetwo_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="onetwo" id="onetwo_sd" value="2">
+            <label type="radio" class="radio" for="onetwo_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="onetwo" id="onetwo_i" value="3">
+            <label type="radio" class="radio" for="onetwo_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="onetwo" id="onetwo_sa" value="4">
+            <label type="radio" class="radio" for="onetwo_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="onetwo" id="onetwo_ca" value="5">
+            <label type="radio" class="radio" for="onetwo_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I avoid social situations where I may not recognize people.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="avoid" id="avoid_cd" value="1">
+            <label type="radio" class="radio" for="avoid_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="avoid" id="avoid_sd" value="2">
+            <label type="radio" class="radio" for="avoid_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="avoid" id="avoid_i" value="3">
+            <label type="radio" class="radio" for="avoid_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="avoid" id="avoid_sa" value="4">
+            <label type="radio" class="radio" for="avoid_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="avoid" id="avoid_ca" value="5">
+            <label type="radio" class="radio" for="avoid_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I lose my way when traveling.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="lost" id="lost_cd" value="1">
+            <label type="radio" class="radio" for="lost_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="lost" id="lost_sd" value="2">
+            <label type="radio" class="radio" for="lost_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="lost" id="lost_i" value="3">
+            <label type="radio" class="radio" for="lost_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="lost" id="lost_sa" value="4">
+            <label type="radio" class="radio" for="lost_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="lost" id="lost_ca" value="5">
+            <label type="radio" class="radio" for="lost_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I try to remember non-facial information about people's appearance.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="nonface" id="nonface_cd" value="1">
+            <label type="radio" class="radio" for="nonface_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="nonface" id="nonface_sd" value="2">
+            <label type="radio" class="radio" for="nonface_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="nonface" id="nonface_i" value="3">
+            <label type="radio" class="radio" for="nonface_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="nonface" id="nonface_sa" value="4">
+            <label type="radio" class="radio" for="nonface_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="nonface" id="nonface_ca" value="5">
+            <label type="radio" class="radio" for="nonface_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I'm more likely to identify a car from its license plate number than its overall appearance.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="license" id="license_cd" value="1">
+            <label type="radio" class="radio" for="license_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="license" id="license_sd" value="2">
+            <label type="radio" class="radio" for="license_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="license" id="license_i" value="3">
+            <label type="radio" class="radio" for="license_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="license" id="license_sa" value="4">
+            <label type="radio" class="radio" for="license_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="license" id="license_ca" value="5">
+            <label type="radio" class="radio" for="license_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">When I meet someone I pretend to recognize them until their identity is revealed.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="online" id="online_cd" value="1">
+            <label type="radio" class="radio" for="online_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="online" id="online_sd" value="2">
+            <label type="radio" class="radio" for="online_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="online" id="online_i" value="3">
+            <label type="radio" class="radio" for="online_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="online" id="online_sa" value="4">
+            <label type="radio" class="radio" for="online_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="online" id="online_ca" value="5">
+            <label type="radio" class="radio" for="online_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can &quot;see&quot; imaginary faces in objects--car fronts, rock formations, clouds.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="imaginary" id="imaginary_cd" value="1">
+            <label type="radio" class="radio" for="imaginary_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="imaginary" id="imaginary_sd" value="2">
+            <label type="radio" class="radio" for="imaginary_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="imaginary" id="imaginary_i" value="3">
+            <label type="radio" class="radio" for="imaginary_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="imaginary" id="imaginary_sa" value="4">
+            <label type="radio" class="radio" for="imaginary_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="imaginary" id="imaginary_ca" value="5">
+            <label type="radio" class="radio" for="imaginary_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have great difficulty recognizing people from their voices on the telephone.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="telephone" id="telephone_cd" value="1">
+            <label type="radio" class="radio" for="telephone_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="telephone" id="telephone_sd" value="2">
+            <label type="radio" class="radio" for="telephone_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="telephone" id="telephone_i" value="3">
+            <label type="radio" class="radio" for="telephone_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="telephone" id="telephone_sa" value="4">
+            <label type="radio" class="radio" for="telephone_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="telephone" id="telephone_ca" value="5">
+            <label type="radio" class="radio" for="telephone_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize casual acquaintances out of context.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="casual" id="casual_cd" value="1">
+            <label type="radio" class="radio" for="casual_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="casual" id="casual_sd" value="2">
+            <label type="radio" class="radio" for="casual_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="casual" id="casual_i" value="3">
+            <label type="radio" class="radio" for="casual_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="casual" id="casual_sa" value="4">
+            <label type="radio" class="radio" for="casual_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="casual" id="casual_ca" value="5">
+            <label type="radio" class="radio" for="casual_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I can recognize family members and close friends out of context.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="close" id="close_cd" value="1">
+            <label type="radio" class="radio" for="close_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="close" id="close_sd" value="2">
+            <label type="radio" class="radio" for="close_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="close" id="close_i" value="3">
+            <label type="radio" class="radio" for="close_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="close" id="close_sa" value="4">
+            <label type="radio" class="radio" for="close_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="close" id="close_ca" value="5">
+            <label type="radio" class="radio" for="close_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+        <fieldset class="field is-grouped">
+    <legend class="label">I have trouble recognizing common fruits and vegetables.</legend>
+    <div>
+        <p class="control">
+            <input type="radio" class="radio" name="fruit" id="fruit_cd" value="1">
+            <label type="radio" class="radio" for="fruit_cd">Never</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="fruit" id="fruit_sd" value="2">
+            <label type="radio" class="radio" for="fruit_sd">Not Usually</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="fruit" id="fruit_i" value="3">
+            <label type="radio" class="radio" for="fruit_i">Sometimes</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="fruit" id="fruit_sa" value="4">
+            <label type="radio" class="radio" for="fruit_sa">Frequently</label>
+        </p>
+        <p class="control">
+            <input type="radio" class="radio" name="fruit" id="fruit_ca" value="5">
+            <label type="radio" class="radio" for="fruit_ca">Always</label>
+        </p>
+    </div>
+</fieldset>
+
+
+    </section>
+    <section class="section" style="display:none">
+        <div class="field">
+            <label class="label" for="extra_textarea">Please leave this field blank</label>
+            <div class="control">
+                <textarea class="textarea" id="extra_textarea" name="extra" autocomplete="off" tabindex="-1"></textarea>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-large is-link" type="submit">Submit</button>
+            </div>
+        </div>
+
+    </section>
+</form>
+
+  </article>
+</div>
+
+  </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            Website content is copyright &copy; 2001-present Brad Duchaine. All Rights Reserved.
+            <br>
+            Website redesign (2018) by Sarah Herald. Updated (2020) by Yiyuan Zhang.
+        </p>
+        <p>
+            
+        </p>
+        <p>
+            <a href="/privacypolicy/">Privacy Policy</a>
+        </p>
+        <a title="Bulma Homepage" href="https://bulma.io">
+            <img src="/assets/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+    </div>
+</footer>
+
+
+  </body>
+
+</html>
