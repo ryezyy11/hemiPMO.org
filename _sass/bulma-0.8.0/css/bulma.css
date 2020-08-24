@@ -3366,6 +3366,12 @@ fieldset[disabled] .button {
   width: 128px;
 }
 
+.image.ishemi {
+  height: 150px;
+  width: 150px;
+}
+
+
 .notification {
   background-color: whitesmoke;
   border-radius: 4px;

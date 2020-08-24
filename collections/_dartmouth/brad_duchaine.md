@@ -10,4 +10,6 @@ email: bradley.c.duchaine@dartmouth.edu
 website: https://pbs.dartmouth.edu/people/brad-duchaine
 topoflist: true
 ---
-Brad is a professor in the Department of Psychological and Brain Sciences, Dartmouth College. Previously he was senior lecturer and group leader at University College London and a postdoctoral fellow at the Vision Sciences Lab at Harvard University. He did his PhD in the Department of Psychology, University of California - Santa Barbara.
+I’m a professor in the Department of Psychological and Brain Sciences at Dartmouth. Much of our lab’s research is focused on neuropsychological investigations of face processing. If you’re interested in our research, you can learn more <a href="https://lab.faceblind.org">here<a>. 
+
+To get in touch about PMO or other types of category-specific metamorphopsia, please email me at: bradley.c.duchaine@dartmouth.edu (or use below links).
