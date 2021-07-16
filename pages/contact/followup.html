@@ -1,0 +1,271 @@
+---
+layout: page
+title: Follow-up Survey - Faceblind
+description:
+heading: Follow-up Survey
+order: 2
+permalink: /contact/followup/
+---
+<p class="content">
+    <strong><abbr title="required">*</abbr> indicates a required field.</strong>
+</p>
+<p class="content">
+    Please make sure to use the same name and email address that you used on the first form. If you have not completed the first contact form, please do so <a href="{{ "contact/" | relative_url }}">here</a> first.
+</p>
+<form name="followup" action="/contact/followup/success" method="POST" netlify-honeypot="extra" netlify>
+    <section>
+        <div class="field">
+            <label class="label" for="first_name">First Name <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="first_name" name="first_name" type="text" autocomplete="given-name" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="last_name">Last Name <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="last_name" name="last_name" type="text" autocomplete="family-name" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="email">Email Address <abbr title="required">*</abbr></label>
+            <div class="control">
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Conditions</h4>
+        </div>
+
+        <p class="content">
+            Please indicate if any of the following applies to you.
+        </p>
+
+        {% include yesno.html legend="Severe head trauma (predating your face processing difficulties)" name="trauma" %}
+
+        {% include yesno.html legend="Stroke (predating your face recognition difficulties)" name="stroke" %}
+
+        {% include yesno.html legend="Carbon Monoxide Poisoning or Anoxia (predating your face recognition difficulties)" name="co_poison" %}
+
+        {% include yesno.html legend="Strabismus (Crossed eyes, wall eyes, wandering eyes)" name="strabismus" %}
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Amblyopia (Lazy Eye)</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_none" value="none">
+                    <label class="radio" for="amblyopia_none">None</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_left" value="left">
+                    <label class="radio" for="amblyopia_left">Left Eye</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_right" value="right">
+                    <label class="radio" for="amblyopia_right">Right Eye</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="amblyopia" id="amblyopia_unsure" value="unsure">
+                    <label class="radio" for="amblyopia_unsure">Unsure Which Eye</label>
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Cataracts</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_none" value="none">
+                    <label class="radio" for="cataracts_none">None</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_rb" value="right_birth">
+                    <label class="radio" for="cataracts_rb">Right Eye - At Birth</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_rc" value="right_child">
+                    <label class="radio" for="cataracts_rc">Right Eye - In Childhood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_ra" value="right_adult">
+                    <label class="radio" for="cataracts_ra">Right Eye - In Adolescence or Adulthood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_lb" value="left_birth">
+                    <label class="radio" for="cataracts_lb">Left Eye - At Birth</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_lc" value="left_child">
+                    <label class="radio" for="cataracts_lc">Left Eye - In Childhood</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="cataracts" id="cataracts_la" value="left_adult">
+                    <label class="radio" for="cataracts_la">Left Eye - In Adolescence or Adulthood</label>
+                </p>
+            </div>
+        </fieldset>
+
+        {% include yesno.html legend="Severe myopia which went uncorrected for years" name="myopia" %}
+
+        {% include yesno.html legend="ADHD" name="ADHD" %}
+        
+        {% include yesno.html legend="Color Blindness / Color Deficiency" name="colorblind" %}
+
+        {% include yesno.html legend="Aphasia (Speech production or speech perception deficit)" name="aphasia" %}
+
+        {% include yesno.html legend="Depression" name="depression" %}
+
+        {% include yesno.html legend="Dyslexia (Reading deficit)" name="dyslexia" %}
+
+        {% include yesno.html legend="Autism" name="autism" %}
+
+        {% include yesno.html legend="Asperger Syndrome" name="asperger" %}
+
+        {% include yesno.html legend="Synaesthesia" name="synaesthesia" %}
+
+        {% include yesno.html legend="Speech Comprehension Problems (For example, central auditory processing deficit)" name="speech_comp" %}
+
+        {% include yesno.html legend="Severe Navigational Problems" name="navigation" %}
+
+        {% include yesno.html legend="Left-Right Confusion" name="leftright" %}
+
+        {% include yesno.html legend="Learning Disabilities" name="learning" %}
+
+        {% include yesno.html legend="Motor Coordination Impairments" name="motor" %}
+
+        <fieldset class="field is-grouped">
+            <legend class="label">Handedness</legend>
+            <div>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_left" value="left">
+                    <label type="radio" class="radio" for="handedness_left">Left</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_right" value="right">
+                    <label type="radio" class="radio" for="handedness_right">Right</label>
+                </p>
+                <p class="control">
+                    <input type="radio" class="radio" name="handedness" id="handedness_both" value="ambidextrous">
+                    <label type="radio" class="radio" for="handedness_both">Ambidextrous</label>
+                </p>
+            </div>
+        </fieldset>
+
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Research Participation</h4>
+        </div>
+
+        {% include yesno.html legend="Would you be willing to have your recognition abilities assessed over the internet?" name="internet" %}
+
+        {% include yesno.html legend="Would you be willing to have your recognition abilities assessed in your hometown?" name="hometown" %}
+
+        {% include yesno.html legend="Would you be willing to travel to one of our labs to be tested (travel expenses paid)?" name="travel" %}
+
+        {% include yesno.html legend="Would you be willing to participate in experiments to see if some aspects of face perception and recognition can be trained?" name="training" %}
+
+    </section>
+    <br>
+    <section>
+
+        <div class="box has-background-light">
+            <h4 class="title has-text-centered">Perception and Cognition in Daily Life</h4>
+        </div>
+
+        {% include likert.html legend="I can remember a seven digit telephone number long enough to write it down." name="digits" %}
+
+        {% include likert.html legend="I can recognize a close family member or good friend in a photograph." name="photograph" %}
+
+        {% include likert.html legend="I can recognize my own baggage at the airport." name="baggage" %}
+        
+        {% include likert.html legend="I have trouble finding items in cluttered scenes." name="cluttered" %}
+
+        {% include likert.html legend="I have trouble recognizing voices." name="voices" %}
+
+        {% include likert.html legend="I treat strangers as if I know them to avoid offending people I might already know." name="strangers" %}
+
+        {% include likert.html legend="I find it easy to play games with children that involve pretending." name="pretend" %}
+
+        {% include likert.html legend="I find it hard to keep track of characters in TV shows or movies." name="characters" %}
+
+        {% include likert.html legend="When trying to find an acquaintance, I have trouble if they are in a room full of people." name="full_room" %}
+
+        {% include likert.html legend="I find it hard to recognize someone I just met." name="just_met" %}
+
+        {% include likert.html legend="I notice whether faces are attractive or unattractive." name="attractive" %}
+
+        {% include likert.html legend="I have trouble recognizing houses I have visited." name="houses" %}
+
+        {% include likert.html legend="I have trouble recognizing people when they are in uniform." name="uniform" %}
+
+        {% include likert.html legend="I can recognize well known actors/actresses when watching a movie." name="actors" %}
+
+        {% include likert.html legend="I have found out that two acquaintances I knew were actually the same person." name="same_person" %}
+
+        {% include likert.html legend="I find it easy to &quot;read between the lines&quot; when someone is talking to me." name="between_lines" %}
+
+        {% include likert.html legend="I notice similarities in the faces of people from the same family." name="similarities" %}
+
+        {% include likert.html legend="I can remember my own telephone number." name="my_number" %}
+
+        {% include likert.html legend="I find streets I have often traveled unfamiliar." name="unfamiliar" %}
+
+        {% include likert.html legend="I can visualize the faces of family members and close friends." name="visualize" %}
+
+        {% include likert.html legend="I have trouble perceiving emotions from faces." name="perceive" %}
+
+        {% include likert.html legend="I can recognize famous celebrities in photos or on TV." name="famous" %}
+
+        {% include likert.html legend="I like to collect information about categories of things (e.g. types of cars, birds, trains, plants, etc.)." name="collect" %}
+
+        {% include likert.html legend="I have trouble determining how old someone is from their face." name="age" %}
+
+        {% include likert.html legend="I can recognize particular cats and dogs." name="animals" %}
+
+        {% include likert.html legend="I have thought that one person was actually two different people." name="onetwo" %}
+
+        {% include likert.html legend="I avoid social situations where I may not recognize people." name="avoid" %}
+
+        {% include likert.html legend="I lose my way when traveling." name="lost" %}
+
+        {% include likert.html legend="I try to remember non-facial information about people's appearance." name="nonface" %}
+
+        {% include likert.html legend="I'm more likely to identify a car from its license plate number than its overall appearance." name="license" %}
+
+        {% include likert.html legend="When I meet someone I pretend to recognize them until their identity is revealed." name="online" %}
+
+        {% include likert.html legend="I can &quot;see&quot; imaginary faces in objects--car fronts, rock formations, clouds." name="imaginary" %}
+
+        {% include likert.html legend="I have great difficulty recognizing people from their voices on the telephone." name="telephone" %}
+
+        {% include likert.html legend="I can recognize casual acquaintances out of context." name="casual" %}
+
+        {% include likert.html legend="I can recognize family members and close friends out of context." name="close" %}
+
+        {% include likert.html legend="I have trouble recognizing common fruits and vegetables." name="fruit" %}
+
+    </section>
+    <section class="section" style="display:none">
+        <div class="field">
+            <label class="label" for="extra_textarea">Please leave this field blank</label>
+            <div class="control">
+                <textarea class="textarea" id="extra_textarea" name="extra" autocomplete="off" tabindex="-1"></textarea>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-large is-link" type="submit">Submit</button>
+            </div>
+        </div>
+
+    </section>
+</form>
