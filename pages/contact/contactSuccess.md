@@ -2,10 +2,10 @@
 layout: content
 title: Success! - Contact Us 
 description:
-heading: You have sucessfully submitted your form!
+heading:     
 permalink: /contact/success
 ---
-##   We will contact you as soon as we can.   
+## You sucessfully submitted your form! We will contact you as soon as we can.   
 
       
 
