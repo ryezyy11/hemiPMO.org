@@ -33,95 +33,6 @@ permalink: /contact/
             </div>
         </div>
         <div class="field">
-            <label class="label" for="city">City <abbr title="required">*</abbr></label>
-            <input class="input" id="city" name="city" type="text" autocomplete="address-level2" required>
-        </div>
-        <div class="field">
-            <label class="label" for="postal_code">Postal Code <abbr title="required">*</abbr></label>
-            <input class="input" id="postal_code" name="postal_code" type="text" autocomplete="postal-code" required>
-        </div>
-        <div class="field">
-            <label class="label" for="state">State/Province <abbr title="required">*</abbr></label>
-            <div class="control">
-                <div class="select">
-                    <select id="state" name="state" autocomplete="address-level1" required>
-                        <option></option>
-                        <option>Other / Not Listed</option>
-                        <optgroup label="United States">
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option>Arizona</option>
-                            <option>Arkansas</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                            <option>Connecticut</option>
-                            <option>Delaware</option>
-                            <option>Florida</option>
-                            <option>Georgia</option>
-                            <option>Guam</option>
-                            <option>Hawaii</option>
-                            <option>Idaho</option>
-                            <option>Illinois</option>
-                            <option>Indiana</option>
-                            <option>Iowa</option>
-                            <option>Kansas</option>
-                            <option>Kentucky</option>
-                            <option>Louisiana</option>
-                            <option>Maine</option>
-                            <option>Maryland</option>
-                            <option>Massachusetts</option>
-                            <option>Michigan</option>
-                            <option>Minnesota</option>
-                            <option>Mississippi</option>
-                            <option>Missouri</option>
-                            <option>Montana</option>
-                            <option>Nebraska</option>
-                            <option>Nevada</option>
-                            <option>New Hampshire</option>
-                            <option>New Jersey</option>
-                            <option>New Mexico</option>
-                            <option>New York</option>
-                            <option>North Carolina</option>
-                            <option>North Dakota</option>
-                            <option>Ohio</option>
-                            <option>Oklahoma</option>
-                            <option>Oregon</option>
-                            <option>Pennsylvania</option>
-                            <option>Puerto Rico</option>
-                            <option>Rhode Island</option>
-                            <option>South Carolina</option>
-                            <option>South Dakota</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Utah</option>
-                            <option>Vermont</option>
-                            <option>Virgin Islands</option>
-                            <option>Virginia</option>
-                            <option>Washington</option>
-                            <option>Washington, D.C.</option>
-                            <option>West Virginia</option>
-                            <option>Wisconsin</option>
-                            <option>Wyoming</option>
-                        </optgroup>
-                        <optgroup label="Canada">
-                            <option>Alberta</option>
-                            <option>British Columbia</option>
-                            <option>Manitoba</option>
-                            <option>Nw. Brunswick</option>
-                            <option>Newfoundland</option>
-                            <option>Nova Scotia</option>
-                            <option>N.W. Territories</option>
-                            <option>Ontario</option>
-                            <option>Prince Edward Island</option>
-                            <option>Quebec</option>
-                            <option>Saskatchewan</option>
-                            <option>Yukon</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="field">
             <label class="label" for="country">Country <abbr title="required">*</abbr></label>
             <div class="control">
                 <div class="select">
@@ -347,79 +258,29 @@ permalink: /contact/
                 </div>
             </div>
         </div>
-        {% capture current_year %}{{ site.time | date: "%Y" }}{% endcapture %}
-        {% capture oldest_year %}{{ current_year | minus: 100 }}{% endcapture %}
-        <fieldset class="field">
-            <legend class="label">Birth Date <abbr title="required">*</abbr></legend>
-            <div class="field is-grouped">
-                <p class="control">
-                    <div class="select">
-                        <select id="birth-year" name="birth-year" autocomplete="bday-year" aria-label="Year" required>
-                            <option></option>
-                            {% for year in (oldest_year..current_year) reversed %}
-                                <option>{{ year }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                </p>
-                <p class="control">
-                    <div class="select">
-                        <select id="birth-month" name="birth-month" autocomplete="bday-month" aria-label="Month" required>
-                            <option></option>
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                        </select>
-                    </div>
-                </p>
-                <p class="control">
-                    <div class="select">
-                        <select id="birth-day" name="birth-day" autocomplete="bday-day" aria-label="Day" required>
-                            <option></option>
-                            {% for day in (1..31) %}
-                            <option>{{ day }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                </p>
-            </div>
-        </fieldset>
-        <fieldset class="field">
-            <legend class="label">Gender <abbr title="required">*</abbr></legend>
-            <div class="field is-grouped">
-                <div class="control">
-                    <input type="radio" class="radio" name="gender" id="gender_male" value="male">
-                    <label class="radio" for="gender_male">Male</label>
-                </div>
-                <div class="control">
-                    <input type="radio" class="radio" name="gender" id="gender_female" value="female">
-                    <label class="radio" for="gender_female">Female</label>
-                </div>
-                <div class="control">
-                    <input type="radio" class="radio" name="gender" id="gender_other" value="other">
-                    <label class="radio" for="gender_other">Other</label>
-                </div>
-            </div>
+                      
+              
         </fieldset>
         
-        {% include yesno.html legend="Do you believe you are experiencing face distortion?" name="problems" required=true %}
+    
+        {% include textarea.html label="Please describe the face distortions that you or the person you knew experienced." name="description" required=true %}
+    
 
         <div class="field">
-            <label class="label" for="pmo_person">If answered 'No' to last question, who is the person you know that is experiencing face distortion? Leave it blank if answered "Yes".</label>
+            <label class="label" for="frequency">How often do you see distortions to faces?</label>
             <div class="control">
-                <input class="input" id="pmo_person" name="pmo_person" type="text" autocomplete="None" >
+                <input class="input" id="frequency" name="frequency" type="text" autocomplete="None" >
             </div>
         </div>
-        
+        <div class="field">
+            <label class="label" for="duration">How long have you experienced these distortions?</label>
+            <div class="control">
+                <input class="input" id="duration" name="duration" type="text" autocomplete="None" >
+            </div>
+        </div>
+
+        {% include textarea.html label="Are you aware of an event that might have contributed to the onset of the distortions? If yes, please briefly describe this event." name="description-onset" required=true %}
+
         {% include yesno.html legend="May we contact you?" name="contact" required=true %}
         <br>
 
