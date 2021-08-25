@@ -1,5 +1,3 @@
 # Redirect default Netlify subdomain to primary domain
-https://admiring-fermat-3207c0.netlify.com/* https://www.faceblind.org/:splat 301!
-
-# Redirect old lab web address to new lab address
-/social_perception/* https://lab.faceblind.org/:splat
+https://facedistortion.faceblind.org/* https://prosopometamorphopsia.faceblind.org/:splat 301!
+http://facedistortion.faceblind.org/* http://prosopometamorphopsia.faceblind.org/:splat 301!
