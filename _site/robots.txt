@@ -1,1 +1,1 @@
-Sitemap: https://www.faceblind.org/sitemap.xml
+Sitemap: https://prosopometamorphopsia.faceblind.org/sitemap.xml
