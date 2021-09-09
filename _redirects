@@ -5,3 +5,7 @@ https://facedistortion.faceblind.org/privacypolicy https://prosopometamorphopsia
 http://facedistortion.faceblind.org/privacypolicy http://prosopometamorphopsia.faceblind.org/privacypolicy 301!
 https://facedistortion.faceblind.org/contact https://prosopometamorphopsia.faceblind.org/contact 301!
 http://facedistortion.faceblind.org/contact http://prosopometamorphopsia.faceblind.org/contact 301!
+
+# Redirect everying to maintaince page
+https://prosopometamorphopsia.faceblind.org/* https://prosopometamorphopsia.faceblind.org/index.html 302
+http://prosopometamorphopsia.faceblind.org/* http://prosopometamorphopsia.faceblind.org/index.html 302
