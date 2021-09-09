@@ -7,5 +7,5 @@ https://facedistortion.faceblind.org/contact https://prosopometamorphopsia.faceb
 http://facedistortion.faceblind.org/contact http://prosopometamorphopsia.faceblind.org/contact 301!
 
 # Redirect everying to maintaince page
-https://prosopometamorphopsia.faceblind.org/* https://prosopometamorphopsia.faceblind.org 302!
-http://prosopometamorphopsia.faceblind.org/* http://prosopometamorphopsia.faceblind.org 302!
+https://prosopometamorphopsia.faceblind.org/contact https://prosopometamorphopsia.faceblind.org 302!
+http://prosopometamorphopsia.faceblind.org/contact http://prosopometamorphopsia.faceblind.org 302!
