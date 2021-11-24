@@ -1,6 +1,6 @@
 ---
-firstname: Brad
-lastname: Duchaine Ph.D.
+firstname: Dr. Brad
+lastname: Duchaine, Ph.D.
 image: BradDuchaine.jpg
 positions:
 - Professor at Dartmouth College
